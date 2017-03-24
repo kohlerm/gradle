@@ -39,7 +39,7 @@ if (finalRelease) {
     version += "-milestone-$milestoneNumber"
 } else {
     isSnapshot = true
-    version += "-$buildTimestamp"
+    //version += "-$buildTimestamp"
 }
 
 ext.testedVersion = isSnapshot ? "${baseVersion}-snapshot-1" : version
